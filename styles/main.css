@@ -1,5 +1,14 @@
+@media screen and (min-width: 80rem) {
+  .title {
+    margin: 1em 2em;
+  }
+}
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 254, 254);
+}
+.title {
+  display: flex;
+  text-align: center;
 }
 h1 {
   color: rgb(0, 0, 0);
@@ -8,19 +17,12 @@ h1 {
   background-color: pink;
   width: 700px;
   height: 100px;
-  margin-left: 300px;
-  margin-top: 20px;
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
-}
-
-p {
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
-
-h3 {
+  position: relative;
+  left: 900px;
+  display: flex;
 }
 
 .about-me {
@@ -35,17 +37,23 @@ h3 {
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
-  display: inline-block;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  position: relative;
+  left: 700px;
 }
 
 .about-me p {
   font-size: 20;
   font-family: cursive;
   padding: 10px;
+  text-wrap: wrap;
+  display: flex;
 }
 
 .blog-post {
-  display: inline-block;
+  display: flex;
   margin-left: 200px;
   font-size: 25;
   width: 400px;
@@ -55,4 +63,8 @@ h3 {
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
+  float: left;
+  flex-direction: column;
+  position: relative;
+  left: 600px;
 }
